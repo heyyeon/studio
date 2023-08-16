@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스튜디오 드래곤</title>
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 기본,공통서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+  <!-- 레이아웃서식 -->
+  <link rel="stylesheet" href="./css/layout.css" type="text/css">
+  <!-- 콘텐츠내용서식 -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 아이콘폰트 서식 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- 스와이퍼슬라이드 서식 -->
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+  <!-- css3속성 사용시 접두사 자동으로 붙여주는 스트립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+<!-- 제이쿼리라이브러리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- 제이쿼리ui라이브러리 -->
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<!-- 제이쿼리 쿠키 파일 -->
+<script src="./script/jquery.cookie.js"></script>
+<!-- 제이쿼리 공통 스크립트 -->
+<script src="./script/layout.js"></script>
+<!-- 콘텐츠 스크립트 -->
+<script src="./script/main.js"></script>
+<!-- aos서식 -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+  <!-- header 영역 시작 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지 바로가기">
+      <img src="./images/gnb_logo_std@2x.png" alt="상단로고">
+      </a>
+    </h1>
+
+    <!-- 상단내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#company" title="company">company</a></li>
+        <li><a href="#business" title="business">business</a></li>
+        <li><a href="#port" title="portfolio">portfolio</a></li>        
+        <li><a href="#news" title="news">news</a></li>
+        <li><a href="#contact" title="contact us">contact us</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- main영역 시작 -->
+  <main>
+    <section id="main_intro">
+      <h2>스튜디오 드래곤 영상</h2>
+      <video autoplay muted loop="infinite">
+        <source src="./images/studio_video.mp4" type="video/webm">
+      </video>
+      <a href="#" title="아래로 이동" class="next_btn">아래로 이동</a>
+    </section>
+
+    <section id="company">
+      <div class="m_inner">
+        <h2>company</h2>
+        <img src="./images/banner01.png" alt="" id="banner">
+        <div class="p01">
+          <p>Universal Emotions, Original Stories</p>
+          <p>전세계가 공감하고 하나되어 즐길 수 있는 우리만의 이야기를 발굴하고 창조합니다.</p>
+      </div>
+    </div>
+    </section>
+
+    <section id="business">
+      <h2>business</h2>
+      <div class="b_h">
+        <p class="b_txt"><strong class="b_s b_point">Healthy Planet: 행복한 세상</strong>
+        <br><span>환혼</span><br>
+        경상북도 문경시 폐기물 적치장<br>&#x003D;&#x003E;관광자원 활용 가능한 오픈 세트장으로 탈바꿈
+        </p>
+        <!-- <div class="code code--wider code--left" data-aos="fade-up" data-aos-anchor-placement="top-bottom">-->
+        <img src="./images/esg_01.jpg" alt="" class="esg_img sa sa-up">
+				</div>
+       
+        <!-- aos소스 
+        <script>
+          AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+          });
+        </script>
+    
+        <script>
+          hljs.initHighlightingOnLoad();
+    
+          $('.hero__scroll').on('click', function(e) {
+            $('html, body').animate({
+              scrollTop: $(window).height()
+            }, 1200);
+          });
+        </script>-->
+      </div>
+      
+      <div class="b_h2">
+        <img src="./images/esg_03.jpg" alt="" class="sa sa-up">
+        <p class="b_txt2"><strong class="b_s b_point02"> Happy People: 행복한 사람</strong><br>
+        <span>우리들의 블루스</span><br>
+        살아있는 우리 모두를 응원해.<br> 우리가 외면해온 다양한 사회현실들을 따듯한 시선을 담아 현실적으로 녹여냈다.
+        </p>
+      </div>
+      <div class="b_h3">
+        <p class="b_txt3"><strong class="b_s b_point03"> Hopeful Business: 희망적인 사업</strong><br>
+        <span>갯마을차차차</span><br>
+        포항의 한 조용한 바닷가 마을 촬영을 통해<br> 주변상권과 지역경제가 살아났다.
+        </p>
+        <img src="./images/esg_02.jpg" alt="" class="sa sa-up">
+      </div>
+
+    </section>
+
+
+    <section id="port">
+      <h2>portfolio</h2>
+      <nav class="g_nav">
+        <ul>
+          <li><a href="" title="전체보기" class="act02">전체</a></li>
+          <li><a href="" title="방영" >방영</a></li>
+          <li><a href="" title="종영" >종영</a></li>
+        </ul>
+      </nav>
+      <!-- 전체: total 방영: ing 종영: end -->
+      <ul class="g_list">
+        <li class="total end">
+          <a href="./images/end6.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end6.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+
+        <li class="total ing">
+          <a href="./images/m5.jpg" title="방영">
+            <div>
+              <img src="./images/m5.jpg" alt="방영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total ing">
+          <a href="./images/m4.jpg" title="방영">
+            <div class="li_inner">
+              <img src="./images/m4.jpg" alt="방영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total end">
+          <a href="./images/end2.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end2.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total ing">
+          <a href="./images/m3.jpg" title="방영">
+            <div class="li_inner">
+              <img src="./images/m3.jpg" alt="방영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            </a>
+        </li>
+        <li class="total end">
+          <a href="./images/end3.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end3.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total end">
+          <a href="./images/end4.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end4.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div> 
+          </a>
+        </li>
+        <li class="total ing">
+          <a href="./images/m2.jpg" title="방영">
+            <div class="li_inner">
+              <img src="./images/m2.jpg" alt="방영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total ing">
+          <a href="./images/m1.jpg" title="방영">
+            <div class="li_inner">
+              <img src="./images/m1.jpg" alt="방영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total end">
+          <a href="./images/end5.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end5.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total end">
+          <a href="./images/end1.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end1.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+        <li class="total end">
+          <a href="./images/end7.jpg" title="종영">
+            <div class="li_inner">
+              <img src="./images/end7.jpg" alt="종영">
+              <span class="caption">상세보기</span>
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+   <section id="news">
+      <h2>news</h2>
+        <div class="news_list">
+          <ul>
+            <li>
+              <div class="thumb_wrap">
+                <p>박승우 감독</p>
+                <a href="#" title="뉴스"><img src="./images/E01.png" alt=""></a>
+              </div>
+              <div class="text_wrap">
+                <span>Inside D &#x0023;1</span>
+                <p>&#x0027;소름&#x0027;을 선사하는 연출가</p>
+                <p><strong>박승우 감독</strong></p>
+                <p>연출 계기부터 &#x0027;아마다스&#x0027;에서의 도전까지!</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb_wrap">
+                <p>미이케 타카시 감독</p>
+                <a href="#" title="뉴스"><img src="./images/E02.png" alt=""></a>
+              </div>
+              <div class="text_wrap">
+                <span>Inside D &#x0023;2</span>
+                <p>일본 장르의 대가</p>
+                <p><strong>미이케 타카시 감독</strong></p>
+                <p>감독님의 작품 세계부터<br> &#x0027;커넥트&#x0027;비하인드 스토리까지&#x0021;</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb_wrap">
+                <p>박원국 감독</p>
+                <a href="#" title="뉴스"><img src="./images/E03.png" alt=""></a>
+              </div>
+              <div class="text_wrap">
+                <span>Inside D &#x0023;3</span>
+                <p>덕잘알 행복 연출가</p>
+                <p><strong>박원국 감독</strong></p>
+                <p> &#x0027;감동님&#x0027; 별명을 얻은<br>
+                  &#x0027;조선 정신과 의사 유세풍&#x0027;의 행복 연출가</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb_wrap">
+                <p>양희승 작가</p>
+                <a href="#" title="뉴스"><img src="./images/E04.png" alt=""></a>
+              </div>
+              <div class="text_wrap">
+                <span>Inside D &#x0023;4</span>
+                <p>따뜻함을 쓰는 작가</p>
+                <p><strong>양희승 작가</strong></p>
+                <p>일상에서 행복 찾기&#x0021; &#x0027;일타 스캔들&#x0027;</p>
+              </div>
+            </li>
+            <li>
+              <div class="thumb_wrap">
+                <p>이수현 감독</p>
+                <a href="#" title="뉴스"><img src="./images/E05.png" alt=""></a>
+              </div>
+              <div class="text_wrap">
+                <span>Inside D &#x0023;5</span>
+                <p>따뜻함 연대 연출가</p>
+                <p><strong>이수현 감독</strong></p>
+                <p>사랑과 연대를 연출하는 &#x0027;이로운 사기&#x0027;</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+    <section id="contact">
+      <h2>contact us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12648.049175184247!2d126.87416478715815!3d37.5783282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c996ce61e3f7b%3A0xe3b0d519f1408d60!2z7Iqk7Yqc65SU7Jik65Oc656Y6rOkKOyjvCk!5e0!3m2!1sko!2skr!4v1692085637958!5m2!1sko!2skr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <img src="./images/about_map-pc-kr.png" alt="지도"> -->
+      <div>
+        <div class="con_box">
+          <div class="loc_box">
+            <img src="./images/aboutus_symbol.png" alt="로고">
+            <dl>
+              <dt><i class="fa-solid fa-map-location-dot"></i></dt>
+              <dd>서울특별시 마포구 매봉산로 75, 17층 </dd><br>
+              <dt><i class="fa-solid fa-envelope-open-text"></i></dt>
+              <dd>dragon@studio.com</dd><br>
+              <dt><i class="fa-solid fa-phone"></i></dt>
+              <dd>070-0000-0000</dd>
+            </dl>
+          </div>
+          <div class="send">
+            <p>Send us a message</p>
+            <!-- <input type="button" value="CLOSE" onclick="window.close();"> -->
+            <i class="fa-regular fa-circle-xmark"></i></a>
+            <form action="">
+              <input type="text" placeholder="Your name" class="in"><br>
+              <input type="text" placeholder="E-mail address" class="in"><br>
+              <input type="text" placeholder="Write your message" class="in">
+              <input type="submit" id="btn" value="send">
+          </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- footer영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2>
+        <a href="index.html" title="하단로고">
+          <img src="./images/footer_logo.png" alt="하단로고">
+        </a>
+      </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="법적고지">법적고지</a></li>
+          <li><a href="#" title="이메일 무단수집 거부">이메일 무단수집 거부</a></li>
+          <li><a href="#" title="온라인 제보">온라인 제보</a></li>
+          <li><a href="#" title="contact us">contact us</a></li>
+          <li><a href="#" title="사이트맵">사이트맵</a></li>
+        </ul>
+      </nav>
+      <address>
+        <dl>
+          <dt>사업자등록번호 :</dt>
+          <dd>1747-81-00388</dd>
+          <dt>대표자 :</dt>
+          <dd>김제현</dd>
+          <dt>주소 :</dt>
+          <dd>서울특별시 마포구 매봉산로 75, 17층 스튜디오드래곤 주식회사</dd>
+        </dl>
+        <p>&copy; 2017 STUDIO DRAGON Corp. All Rights Reserved.</p>
+      </address>
+    </div>
+  </footer>
+
+  <!-- 스와이퍼슬라이드 스트립트 -->
+  <script src="./script/swiper.js"></script>
+
+</body>
+</html>

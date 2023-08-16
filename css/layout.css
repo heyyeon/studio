@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* 레이아웃서식  header, main, footer공통서식*/
+
+/* 헤더서식 */
+header{
+  width: 100%;height: 110px;
+  position: fixed;top: 0;left: 0;
+  z-index: 1000;
+}
+header:hover{
+  background: rgba(255, 255, 255, .8);
+}
+
+header>h1{
+  padding: 20px;
+}
+
+header nav{
+  width: 600px;
+  margin: -70px auto 0px auto;
+  /* position: absolute;top: -24px;
+  left: 50px;transform: translateX(-50%); */
+}
+header .gnb{
+  display: flex;
+  justify-content: space-around;
+}
+header .gnb>li>a{
+  font-size: 1.2rem;
+  color: var(--t-color02);
+  text-transform: uppercase;
+}
+/* 메인 내비게이션 서식 */
+#company, #port, #business, #news, #contact{
+  width: 1200px;
+  margin: 0px auto;
+  text-align: center;
+}
+/* portfolio 서식 */
+#port{
+  height: 100vh;
+}
+#port > h2{
+  margin: 10px 0 70px 0;
+}
+.g_nav ul{
+  display: flex;
+  justify-content: center;
+}
+.g_nav ul li{margin: 10px;}
+.g_nav ul li a{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 4px 15px;
+  line-height: 28px;
+  margin-bottom:20px;
+}
+
+/* .act{
+  background: rgba(255, 255, 255, .8) !important;
+  color: #fff;
+} */
+.act02{
+  background: #fff !important;
+  color: #0b0259;
+}
+/* 갤러리 이미지 서식 */
+.g_list{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.g_list > li{
+  width: 16%;height: 320px;
+  overflow: hidden; 
+  }
+.g_list .li_inner{
+  text-align: center;
+}
+.g_list > li>a >div> img{
+  display: block;
+  width: 100%;
+  margin: 2px; 
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  transition: 0.5s;
+}
+.g_list > li:hover img{
+  filter: brightness(0.5);
+}
+.g_list > li:hover .caption{
+display: block;
+}
+
+ .g_list > .total .caption{
+  display: inline-block;
+  width: 194px;
+  height: 100%;
+  font-size: 19px;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(5px, -170px);
+  display: none;
+}
+.g_list > li:hover i.fa-plus{
+display: block;
+}
+i.fa-plus{
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  transform: translateY(-160px);
+  display: none;
+}
+
+span:nth-of-type(2){
+  color:var(--t-color01);
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px; left: 40px;
+}
+
+ /* {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+} */
+/* .caption:hover {
+  width: 100%;
+  overflow: hidden;
+  background: #0b0259ab;
+  position: absolute;
+  bottom: 0px;left: 0;right: 0;
+  transition: .5s ease;
+} */
+/* .text {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+  text-align: center;
+} */
+
+
+
+/* 푸터서식 */
+footer{
+  background: #0a0259;
+  width: 100%;
+  padding: 40px 0px;
+  /* display: inline-block; float속성사용 후 방법1*/
+  height: 120px;/*방법3*/
+}
+.f_inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+.f_inner>h2{
+  width: 220px;height: 72px;
+  margin: 15px;
+  float: left;
+}
+.f_inner>h2 img{
+  width: 218px;height: 80px;
+
+}
+.f_lnb, address{
+  width: 1000px; 
+  /*float: left;   부모의 높이가 사라짐 */
+}
+/* footer::after{   float속성 사용후 방법2
+  display: block;
+  content: "";
+  clear: both;
+} */
+
+.f_lnb ul{
+  display: flex;
+  padding-top: 15px;
+}
+.f_lnb ul a{
+  color: #ccc;
+  font-size: 15px;
+  padding: 0px 10px;
+}
+/* .f_lnb ul li:nth-child(2) a{
+  color: var(--t-color02);
+}
+.f_lnb ul li:last-child a{border: none;} */
+footer address{
+  padding-top: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  color: var(--t-color02);
+}
+footer address dl{} 
+footer address dt{display: inline-block;}
+footer address dd{display: inline-block; margin-right: 5px;}
