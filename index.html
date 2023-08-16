@@ -15,7 +15,7 @@
 
   <link rel="stylesheet" href="./css/common.css" type="text/css">
   <!-- 아이콘폰트 서식 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" type="text/css">
   <!-- 스와이퍼슬라이드 서식 -->
   <link rel="stylesheet" href="./css/swiper.css" type="text/css">
   <!-- css3속성 사용시 접두사 자동으로 붙여주는 스트립트 소스 -->
@@ -31,7 +31,7 @@
 <!-- 콘텐츠 스크립트 -->
 <script src="./script/main.js"></script>
 <!-- aos서식 -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" type="text/css">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style>
 
@@ -63,9 +63,13 @@
   <main>
     <section id="main_intro">
       <h2>스튜디오 드래곤 영상</h2>
-      <video autoplay muted loop="infinite">
+      <!-- <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+        <source src="video/husky.mp4" type="video/mp4">      </video>-->
+
+      <video autoplay muted loop="loop">
         <source src="./images/studio_video.mp4" type="video/webm">
       </video>
+
       <a href="#" title="아래로 이동" class="next_btn">아래로 이동</a>
     </section>
 
@@ -87,7 +91,6 @@
         <br><span>환혼</span><br>
         경상북도 문경시 폐기물 적치장<br>&#x003D;&#x003E;관광자원 활용 가능한 오픈 세트장으로 탈바꿈
         </p>
-        <!-- <div class="code code--wider code--left" data-aos="fade-up" data-aos-anchor-placement="top-bottom">-->
         <img src="./images/esg_01.jpg" alt="" class="esg_img sa sa-up">
 				</div>
        
@@ -107,9 +110,7 @@
               scrollTop: $(window).height()
             }, 1200);
           });
-        </script>-->
-      </div>
-      
+        </script>--> 
       <div class="b_h2">
         <img src="./images/esg_03.jpg" alt="" class="sa sa-up">
         <p class="b_txt2"><strong class="b_s b_point02"> Happy People: 행복한 사람</strong><br>
@@ -331,9 +332,9 @@
             <img src="./images/aboutus_symbol.png" alt="로고">
             <dl>
               <dt><i class="fa-solid fa-map-location-dot"></i></dt>
-              <dd>서울특별시 마포구 매봉산로 75, 17층 </dd><br>
+              <dd>서울특별시 마포구 매봉산로 75, 17층 </dd>
               <dt><i class="fa-solid fa-envelope-open-text"></i></dt>
-              <dd>dragon@studio.com</dd><br>
+              <dd>dragon@studio.com</dd>
               <dt><i class="fa-solid fa-phone"></i></dt>
               <dd>070-0000-0000</dd>
             </dl>
@@ -341,7 +342,7 @@
           <div class="send">
             <p>Send us a message</p>
             <!-- <input type="button" value="CLOSE" onclick="window.close();"> -->
-            <form action="">
+            <form>
               <input type="text" placeholder="Your name" class="in"><br>
               <input type="text" placeholder="E-mail address" class="in"><br>
               <input type="text" placeholder="Write your message" class="in">

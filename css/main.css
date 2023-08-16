@@ -319,12 +319,12 @@ padding: 20px 0;
   margin: 30px 0;
 }
 .loc_box dl i.fa-solid{
-font-size: 18px;
+font-size: 16px;
 margin: 5px;
 }
 .loc_box dt, dd{
-display: inline-block;
-line-height: 35px;
+
+line-height: 20px;
 }
 .send{
   display: none;
@@ -358,7 +358,6 @@ input {
   margin-bottom: 30px;
   color: white;
   font-weight: bold;
-  font-style: 25px;
   text-transform: capitalize;
   cursor: pointer;
 }
